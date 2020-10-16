@@ -9,6 +9,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     int scoreTeamA = 0;
     int scoreTeamB = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,5 +61,15 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB = 0;
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
+    }
+
+    public void Finish(View view) {
+        TextView resultFinal = findViewById (R.id.result_final);
+        String[] results_string = { "Team A won the match", "Team B won the match", "Match Tie"};
+        if (scoreTeamB>scoreTeamA)resultFinal.setText (results_string[1]);
+        else if (scoreTeamA>scoreTeamB)resultFinal.setText (results_string[0]);
+        else resultFinal.setText (results_string[2]);
+
+        resetScore (view);
     }
 }

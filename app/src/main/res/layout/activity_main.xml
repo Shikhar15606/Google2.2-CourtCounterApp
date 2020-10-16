@@ -149,6 +149,28 @@
             </LinearLayout>
 
         </LinearLayout>
+        <Button
+            android:id="@+id/buttonFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="182dp"
+            android:onClick="Finish"
+            android:text="Finish" />
+
+        <TextView
+            android:id="@+id/result_final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="122dp"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="#000"/>
+
+
 
         <Button
             android:id="@+id/button4"
