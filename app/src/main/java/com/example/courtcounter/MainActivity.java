@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
         else if (scoreTeamA>scoreTeamB)resultFinal.setText (results_string[0]);
         else resultFinal.setText (results_string[2]);
 
-
         resetScore (view);
     }
 }
